@@ -1,23 +1,28 @@
-from PyQt5.QtWidgets import QDialog, QMainWindow
+from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import pyqtSignal
-import configparser, os
+from os import walk, mkdir
+import configparser
+from sys import argv, exit
+import UIset
 
 class mainwindows(QMainWindow):
     def __init__(self):
         super(mainwindows, self).__init__()
         loadUi('UI/Main-window.ui', self)
+        #TODO:修正变量名称
         self.AB = None
         self.AA = None
         self.AC = None
         self.AD = None
-
+# 定义信号类型
     Name = pyqtSignal(str)
     Id = pyqtSignal(str)
     Lang = pyqtSignal(str)
     About = pyqtSignal(str)
     Write = pyqtSignal()
     AutoFile = pyqtSignal()
+    AboutWindow = pyqtSignal()
     def Name(self,text):
         print("Name输入内容:" + text)
         self.AA = text
@@ -31,14 +36,18 @@ class mainwindows(QMainWindow):
         print("About输入内容为" + text)
         self.AD = text
     def Write(self):
-        print('生成完成')
-        with open('./ModFile/' + self.AC, 'a', encoding='utf-8') as B:
-            B.write('\n' + '<entityname.' + self.AB + '>' + self.AA + '</entityname.' + self.AB + '>')
-            B.write('\n' + '<entitydescription.' + self.AB + '>' + self.AD + '</entitydescription.' + self.AB + '>')
+        if self.AA != None and self.AB != None and self.AD != None and self.AC != None:
+            print('生成完成')
+            with open('./ModFile/' + self.AC, 'a', encoding='utf-8') as B:
+                B.write('\n' + '<entityname.' + self.AB + '>' + self.AA + '</entityname.' + self.AB + '>')
+                B.write('\n' + '<entitydescription.' + self.AB + '>' + self.AD + '</entitydescription.' + self.AB + '>')
+        else:
+            print('内容有空，拒绝访问')
+            #TODO:运行DEbug菜单达到提示目的
     def AutoFile(self):
         config = configparser.ConfigParser()
         configname = './config.ini'
-        for root, dirs, files in os.walk('./'):
+        for root, dirs, files in walk('./'):
             if 'config.ini' in files:
                 print('检测到配置文件')
                 config.read(configname, encoding='utf-8')
@@ -46,7 +55,7 @@ class mainwindows(QMainWindow):
                 file = config.get('run', 'file')
                 # 判断是否需要初始化建立文件
                 if file == '0':
-                    os.mkdir('./ModFile')
+                    mkdir('./ModFile')
                     list = {"filelist.xml", "SimplifiedChinese.xml", "English.xml", "Mods.xml"}
                     for make in list:
                         with open('./ModFile/' + make, 'w', encoding='utf-8') as A:
@@ -75,3 +84,11 @@ class mainwindows(QMainWindow):
                 }
                 config.write(open('config.ini', 'w', encoding='utf-8'))
                 break
+    def AboutWindow(self):
+        About.show()
+if __name__ == '__main__':
+    app = QApplication(argv)
+    Main = mainwindows()
+    About = UIset.AboutWindow()
+    Main.show()
+    exit(app.exec_())
