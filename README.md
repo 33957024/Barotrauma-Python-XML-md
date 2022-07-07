@@ -1,5 +1,5 @@
 # Barotrauma-Python-XML-md
-用Python制作Barotrauma的mod\n  
+用Python制作Barotrauma的mod  
 软件处于测试阶段目前版本号1.0.1  
 ## 功能如下
 1.添加物品中英文[试装]  
