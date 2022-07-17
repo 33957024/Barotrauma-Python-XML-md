@@ -146,20 +146,13 @@
      <widget class="QWidget" name="horizontalLayoutWidget">
       <property name="geometry">
        <rect>
-        <x>310</x>
+        <x>399</x>
         <y>290</y>
-        <width>320</width>
+        <width>231</width>
         <height>41</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QPushButton" name="pushButton_4">
-         <property name="text">
-          <string>About</string>
-         </property>
-        </widget>
-       </item>
        <item>
         <widget class="QPushButton" name="pushButton_2">
          <property name="text">
@@ -417,8 +410,8 @@
    </hints>
   </connection>
   <connection>
-   <sender>pushButton_4</sender>
-   <signal>clicked()</signal>
+   <sender>actionAbout</sender>
+   <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
    <slot>AboutWindow()</slot>
    <hints>

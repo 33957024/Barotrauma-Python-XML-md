@@ -20,7 +20,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>DEBUG</string>
   </property>
   <widget class="QWidget" name="centralWidget" native="true">
    <property name="geometry">
@@ -37,24 +37,7 @@
      <height>360</height>
     </size>
    </property>
-   <widget class="QLabel" name="label_1">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>171</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>作者:CTos
-本软件遵守许可证：AGPL-3.0</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -64,33 +47,20 @@
      </rect>
     </property>
     <property name="text">
-     <string>BACK</string>
+     <string>OK</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>50</y>
-      <width>54</width>
-      <height>12</height>
+      <y>15</y>
+      <width>461</width>
+      <height>211</height>
      </rect>
     </property>
     <property name="text">
-     <string>版本号:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>50</y>
-      <width>54</width>
-      <height>12</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>V0.0.0</string>
+     <string>DEbug</string>
     </property>
    </widget>
   </widget>
@@ -114,18 +84,18 @@
  <resources/>
  <connections>
   <connection>
-   <sender>pushButton_2</sender>
+   <sender>pushButton</sender>
    <signal>clicked()</signal>
    <receiver>AboutWindow</receiver>
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>255</x>
-     <y>324</y>
+     <x>207</x>
+     <y>329</y>
     </hint>
     <hint type="destinationlabel">
-     <x>309</x>
-     <y>301</y>
+     <x>334</x>
+     <y>299</y>
     </hint>
    </hints>
   </connection>
