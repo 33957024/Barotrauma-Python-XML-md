@@ -1,10 +1,9 @@
-from PyQt5.QtWidgets import QMainWindow, QApplication
+from PyQt5.QtWidgets import QMainWindow, QApplication, QDialog
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import pyqtSignal
 from os import walk, mkdir
 import configparser
 from sys import argv, exit
-import UIset
 
 class mainwindows(QMainWindow):
     def __init__(self):
@@ -42,8 +41,9 @@ class mainwindows(QMainWindow):
                 B.write('\n' + '<entityname.' + self.AB + '>' + self.AA + '</entityname.' + self.AB + '>')
                 B.write('\n' + '<entitydescription.' + self.AB + '>' + self.AD + '</entitydescription.' + self.AB + '>')
         else:
+            Debug.bug('内容为空')
+            Debug.show()
             print('内容有空，拒绝访问')
-            #TODO:运行DEbug菜单达到提示目的
     def AutoFile(self):
         config = configparser.ConfigParser()
         configname = './config.ini'
@@ -78,17 +78,38 @@ class mainwindows(QMainWindow):
             else:
                 print("没有检测到配置文件，开始生成")
                 config = configparser.ConfigParser()
+                #TODO:我觉得这里的版本号可以自动生成的
                 config['run'] = {
                     'initialization': '1',
-                    'file': '0'
+                    'file': '0',
+                    'version': '1.0.4'
                 }
                 config.write(open('config.ini', 'w', encoding='utf-8'))
                 break
     def AboutWindow(self):
         About.show()
+# 提供About窗口
+class AboutWindow(QDialog):
+    def __init__(self):
+        super(AboutWindow, self).__init__()
+        loadUi('UI/About.ui', self)
+        config = configparser.ConfigParser()
+        configname = './config.ini'
+        config.read(configname, encoding='utf-8')
+        version = config.get('run', 'version')
+        self.label_2.setText(version)
+# 提供Debug窗口
+class Debug(QDialog):
+    def __init__(self):
+        super(Debug, self).__init__()
+        loadUi('UI/Debug.ui', self)
+    def bug(self,bug):
+        Text = '出现异常\n' + 'bug是' + bug + '\n请检查是否出现忘记输入，错误输入等原因\n如果非人为操作请在GitHub反馈给我'
+        self.label.setText(Text)
 if __name__ == '__main__':
     app = QApplication(argv)
     Main = mainwindows()
-    About = UIset.AboutWindow()
+    About = AboutWindow()
+    Debug = Debug()
     Main.show()
     exit(app.exec_())
