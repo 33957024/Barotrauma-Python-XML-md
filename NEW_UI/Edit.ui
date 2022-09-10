@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutWindow</class>
+ <widget class="QDialog" name="AboutWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>480</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="1" column="0" colspan="6">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLineEdit" name="lineEdit_5"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="comboBox_6"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLineEdit" name="lineEdit_4"/>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLineEdit" name="lineEdit_7"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QComboBox" name="comboBox_8"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLineEdit" name="lineEdit"/>
+     </item>
+     <item row="6" column="2">
+      <widget class="QComboBox" name="comboBox_10"/>
+     </item>
+     <item row="12" column="2">
+      <widget class="QLineEdit" name="lineEdit_9"/>
+     </item>
+     <item row="10" column="2">
+      <widget class="QLineEdit" name="lineEdit_6"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QComboBox" name="comboBox_5"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="comboBox_3"/>
+     </item>
+     <item row="12" column="1">
+      <widget class="QLineEdit" name="lineEdit_8"/>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="comboBox_9"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QComboBox" name="comboBox_2"/>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="lineEdit_2"/>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLineEdit" name="lineEdit_3"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QComboBox" name="comboBox_4"/>
+     </item>
+     <item row="4" column="2">
+      <widget class="QComboBox" name="comboBox_7"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="5">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QComboBox" name="comboBox_11"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string>aa</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ab</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>确认</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionopen">
+   <property name="text">
+    <string>open...</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionSetting">
+   <property name="text">
+    <string>Setting</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>Text_1(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>106</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_2</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>Text_2(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>292</x>
+     <y>261</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_3</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>Text_3(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>610</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>497</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_4</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>Text_4(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>400</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_5</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>Text_5(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>400</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>339</x>
+     <y>332</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_6</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>Text_6(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>610</x>
+     <y>400</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>517</x>
+     <y>331</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_7</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>Text_7(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>474</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>130</x>
+     <y>400</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_8</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>Text_8(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>474</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>396</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_9</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>Text_9(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>610</x>
+     <y>474</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>550</x>
+     <y>395</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_8</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>combo_1(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>61</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_9</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>combo_2(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_10</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>combo_3(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>610</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>493</x>
+     <y>61</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_5</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>combo_4(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>71</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_6</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>combo_5(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>278</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_7</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>combo_6(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>610</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>473</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_2</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>combo_7(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_3</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>combo_8(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_4</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>combo_9(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>610</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>546</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>ok()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>476</x>
+     <y>486</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>father(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>105</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>edit_set_ok()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_11</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>AboutWindow</receiver>
+   <slot>edit_set(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>87</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Text_1(QString)</slot>
+  <slot>Text_2(QString)</slot>
+  <slot>Text_3(QString)</slot>
+  <slot>Text_4(QString)</slot>
+  <slot>Text_5(QString)</slot>
+  <slot>Text_6(QString)</slot>
+  <slot>Text_7(QString)</slot>
+  <slot>Text_8(QString)</slot>
+  <slot>Text_9(QString)</slot>
+  <slot>combo_1(QString)</slot>
+  <slot>combo_2(QString)</slot>
+  <slot>combo_3(QString)</slot>
+  <slot>combo_4(QString)</slot>
+  <slot>combo_5(QString)</slot>
+  <slot>combo_6(QString)</slot>
+  <slot>combo_7(QString)</slot>
+  <slot>combo_8(QString)</slot>
+  <slot>combo_9(QString)</slot>
+  <slot>father(QString)</slot>
+  <slot>ok()</slot>
+  <slot>edit_set_ok()</slot>
+  <slot>edit_set(QString)</slot>
+ </slots>
+</ui>
