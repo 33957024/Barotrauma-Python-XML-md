@@ -13,7 +13,7 @@ from xml.etree.ElementTree import (
 class MainWindows(QMainWindow):
     def __init__(self):
         # 自定义字体导入
-        self.identifier = []
+        self.identifier = None
         self.pricelist = []
         self.path2 = None
         self.path = None
