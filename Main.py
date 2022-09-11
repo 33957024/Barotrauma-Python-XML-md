@@ -1,11 +1,13 @@
-from PyQt5.QtWidgets import QMainWindow, QApplication, QDialog
+from PyQt5.QtWidgets import QMainWindow, QApplication, QDialog, QMessageBox, QDataWidgetMapper
 from PyQt5.uic import loadUi
 import configparser
 from PyQt5.QtGui import QFontDatabase, QIcon
+from PyQt5.QtCore import QModelIndex
 from sys import argv, exit
 from xml.etree.ElementTree import (
     Element, SubElement, ElementTree
 )
+from PyQt5.QtSql import QSqlQueryModel, QSqlDatabase, QSqlRecord, QSqlQuery, QSqlTableModel
 
 
 # 主窗口
@@ -16,6 +18,14 @@ class MainWindows(QMainWindow):
         loadUi('NEW_UI/Main.ui', self)
         QFontDatabase.addApplicationFont('./Font/Bender_Light.otf')
         self.setWindowIcon(QIcon('./NEW_UI/edit.ico'))
+        self.DB = QSqlDatabase.addDatabase('QSQLITE')
+        self.DB.setDatabaseName('Item.db')
+        if self.DB.open():
+            self.setDB = QSqlTableModel(self, self.DB)
+            self.setDB.setTable('Valuetree')
+            self.tableView.setModel(self.setDB)
+        else:
+            QMessageBox.warning(self, '错误', '打开数据库失败')
 
     def Main_add(self):
         pass

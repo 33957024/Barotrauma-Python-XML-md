@@ -25,33 +25,56 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>256</width>
+      <width>611</width>
       <height>192</height>
      </rect>
     </property>
     <column>
      <property name="text">
-      <string notr="true">1</string>
+      <string>树状图</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>3</string>
+      <string notr="true">名字</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>标识符</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>简介</string>
      </property>
     </column>
     <item>
      <property name="text">
-      <string>2</string>
+      <string>Main</string>
+     </property>
+     <property name="text">
+      <string>a</string>
+     </property>
+     <property name="text">
+      <string>b</string>
+     </property>
+     <property name="text">
+      <string>3</string>
      </property>
      <item>
       <property name="text">
+       <string>新建子项目</string>
+      </property>
+      <property name="text">
+       <string>a</string>
+      </property>
+      <property name="text">
        <string>3</string>
       </property>
-      <item>
-       <property name="text">
-        <string>4</string>
-       </property>
-      </item>
+      <property name="text">
+       <string>3</string>
+      </property>
      </item>
     </item>
    </widget>
@@ -60,22 +83,12 @@
      <rect>
       <x>10</x>
       <y>210</y>
-      <width>191</width>
+      <width>171</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
      <string>保存[直接写入文件]</string>
-    </property>
-   </widget>
-   <widget class="QListView" name="listView">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>10</y>
-      <width>256</width>
-      <height>192</height>
-     </rect>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -94,14 +107,24 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>240</y>
+      <x>210</x>
+      <y>210</y>
       <width>141</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>打开编辑器</string>
+     <string>打开事件编辑器</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>241</y>
+      <width>601</width>
+      <height>201</height>
+     </rect>
     </property>
    </widget>
   </widget>
@@ -127,8 +150,8 @@
    <slot>openEdit()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>299</x>
-     <y>291</y>
+     <x>350</x>
+     <y>255</y>
     </hint>
     <hint type="destinationlabel">
      <x>435</x>
