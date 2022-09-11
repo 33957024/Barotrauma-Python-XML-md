@@ -1,6 +1,5 @@
-from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog
+from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog, QMessageBox
 from PyQt5.uic import loadUi
-from PyQt5.QtCore import pyqtSignal
 from PyQt5.QtGui import QFontDatabase
 from sys import argv, exit
 from xml.etree.ElementTree import (
@@ -26,12 +25,12 @@ class MainWindows(QMainWindow):
                 b = path.get('identifier')
                 print('ID:' + b)
         except:
-            print('路径或文件有问题捏')
+            QMessageBox.warning(self, '错误', '路径或文件有问题捏')
 
     def read(self):
         path, file = QFileDialog.getOpenFileName(self, '选择文件', 'C:/', '效果XML-files(*.xml)')
         self.path = path
-        self.label_3.setText(path)
+        QMessageBox.information(self, '确认路径', path)
 
 
 if __name__ == '__main__':

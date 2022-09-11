@@ -34,7 +34,9 @@ class MainWindows(QMainWindow):
         pass
 
     def openEdit(self):
+        self.label.setText('打开编辑器ing...')
         Edit.show()
+        self.label.setText('就绪')
 
 
 # 提供编辑界面
@@ -799,7 +801,7 @@ class Edit(QDialog):
             self.lineEdit_8.setPlaceholderText('null')
             self.lineEdit_9.setPlaceholderText('null')
         else:
-            print('不应该出现这句话的，看到我请上报github')
+            QMessageBox.warning(self, '错误', '不应该出现这句话的，看到我请上报github')
 
 
 if __name__ == '__main__':
