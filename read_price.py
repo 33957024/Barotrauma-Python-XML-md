@@ -1,9 +1,8 @@
 import traceback
-
 from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog, QMessageBox
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import QStringListModel
-from PyQt5.QtGui import QFontDatabase
+from PyQt5.QtGui import QFontDatabase, QIcon
 from sys import argv, exit
 from xml.etree.ElementTree import (
     ElementTree
@@ -12,14 +11,17 @@ from xml.etree.ElementTree import (
 
 class MainWindows(QMainWindow):
     def __init__(self):
+        super(MainWindows, self).__init__()
+        loadUi('UI/read.ui', self)
         # 自定义字体导入
         self.identifier = None
         self.pricelist = []
         self.path2 = None
         self.path = None
+        self.setWindowIcon(QIcon('./NEW_UI/edit.ico'))
+        self.setWindowTitle('多功能行动编辑器')
+        self.label_2.setText('注意：\nby:CTos\n喵~~\nV1.0.4')
         QFontDatabase.addApplicationFont('./Font/Bender_Light.otf')
-        super(MainWindows, self).__init__()
-        loadUi('UI/read.ui', self)
 
     def file(self):
         self.pricelist.clear()
